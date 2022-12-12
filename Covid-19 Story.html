@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Covid-19 Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Home</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Projects</a></li>
+							<li class="active"><a href="Covid-19 Story.html">Covid-19 Dashboard by Team LinkIT</a></li>
+							
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/bensaid-ashref-a136311a9/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+				
+							<li><a href="https://github.com/spicyhesus" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">April 25, 2022</span>
+									<h1>Covid-19<br />
+									Dashboard by Team LinkIT </h1>
+									<h3>SPECIAL THANKS</h3>
+								<p>  I want to thank everyone that participated in this project or was a part of it , i want to thank my teammates , Hamza Merhabene , Yessin fradj ,mariem miled, marouen karoui and our professor Haddi Mariem who was our guide throughout this project . </p>
+								<h3>INTRODUCTION</h3>
+								<p>The end goal of this project is to Create a dashboard using Microsoft Power BI containing charts 
+										about the spread of the virus across the country and help the indian goverment predict its next peaks 
+										via plots created by implementing machine learning methods then publishing the dashboard
+										on a web page .</p>
+								</header>
+								<a href="https://www.youtube.com/watch?v=Ko8v1rERvvE&ab_channel=BensaidASHREF" target="_blank" class="image fit"><img src="images/thumbnail.PNG" alt="" /></a>
+								
+								<h3>I-Data Cleaning</h3>
+								<p>A dataset was handed to us .<br>LinkIT, a group of five students , we started by one of the first steps in the early stages of the project which was cleaning the data ,
+									ie:
+										Getting rid of duplicates ,
+										Fixing structural errors(typos / incorrect capitalization),
+										Taking care of outliers (data that contains  absurd,abnormal values ),
+										Deleting or Filling missing values based on how it will affect our data,
+										Validating the data.
+									</p>
+
+								<h3>II-ETL process using talend and Postgresql</h3>
+								<p>Since we polished our dataset this stage was relatively easy ,
+									 we used Talend Open Studio to extract and load the data into a database for future use (dashboard creation).</p>
+								
+								<h3>III-Machine Learning</h3>
+								<p>At this point of the project it was convenient to decide which algorithms and models would be best suited  for our purpose ,
+									 we planned on implementing 3 features : prediction, classification, sentiment analysis.</p>
+								<h4>1-Classification</h4>	 
+								<p>we made progress with classification because we had the idea of classifying data from the beginning 
+									we decided that categorization would be helpful when it comes to the level of infection by state , vaccination rate and the spread rate 
+									to implement this we used KNN(K-Nearest-Neighbour) and K-Means clustering.</p>
+
+								<h4>2-Sentiment Analysis</h4>
+								<p>Sentiment analysis was an idea we had to understand how the vaccines are affecting the population
+									we we started data gathering from twitter via scraping tools then we cleaned the data by removing the stop words to make it ready
+									to analyze after we feed it to the algorithm (Linear Regression).</p>
+
+								<h4>3-Peak Prediction</h4>
+								<p>Concerning predictions , we thought it would be well suited if we worked with time series ,
+									we transformed our data accordingly then trained our model and got an accuracy of 84%.
+								</p>
+								<h3>IV-Power BI</h3>	
+								<p> As we approach the end of this project , its time to put everything we created to use .<br>
+									the tool that helped us accomplish this was Microsoft Power BI , we created our dashboard that holds several sheets 
+									each containing various sections and sub-sections , eachone dedicated to a field i.e one for machine learning features , one for charts and plots, one for spread map .</p>
+
+								<h3>V-Publishing</h3>
+								<p> This is the last stage of this project , we chose to publish the dashboard to our own website that also contains daily real time news about covid , providing the user with full insight about the situation of the virus.
+									 </p>
+								
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">bensaid.ashref@esprit.tn</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/bensaid-ashref-a136311a9/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+				
+									<li><a href="https://github.com/spicyhesus" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
